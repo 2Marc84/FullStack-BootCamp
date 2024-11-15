@@ -30,13 +30,26 @@ const Content = (props) => {
 
   return (
    <div>
-      <p>part1: {props.parts[0].name} ,Number exercices: {props.parts[0].exercises}</p>
-      <p>part2: {props.parts[1].name} ,Number exercices: {props.parts[1].exercises}</p>
-      <p>part3: {props.parts[2].name} ,Number exercices: {props.parts[2].exercises}</p>
+      <Part name = {props.parts[0].name} exercises = {props.parts[0].exercises} />
+      <Part name = {props.parts[1].name} exercises = {props.parts[1].exercises} />
+      <Part name = {props.parts[2].name} exercises = {props.parts[2].exercises} />
 
   </div>
   )
 }
+
+const Part = (props) => {
+
+return (
+<div>
+<p>{props.name} {props.exercises}</p>
+
+</div>
+
+)
+
+}
+
 const Total = (props) => {
 
   return (
